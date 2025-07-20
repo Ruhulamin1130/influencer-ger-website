@@ -57,6 +57,7 @@
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .banner-text {
@@ -88,6 +89,69 @@
   font-size: 1rem;
   color: #3a3a3a;
 }
+
+
+/* main design start  */
+
+main section {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+section {
+  margin-top: 40px;
+}
+.logos {
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+  /* padding: 10px 30px; */
+  align-items: center;
+
+  
+}
+.logos img {
+  /* margin: 0 20px; */
+}
+
+.card-father {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.4);
+  
+  border: 1px solid wheat;
+  padding: 5px;
+
+}
+/* section button {
+  display: flex;
+  align-items: end;
+} */
+ .btn {
+    /* text-align: left; */
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+ .card-father button {
+  text-align: right;
+ }
+.bt-calar {
+  color: #E02C6D;
+  background: none;
+  font-weight: 600;
+  padding: 20px;
+  
+}
+.popular {
+    text-align: center;
+  }
 /* responsive style for mobile */
 @media screen and (max-width: 576px) {
   .nav-bar {
@@ -115,6 +179,20 @@
   }
   .text-title {
     font-size: 2rem;
+  }
+  /* logos style */
+  .logos {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+
+  }
+  .popular {
+    text-align: center;
+  }
+
+  .card-father {
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 }
 /* responsive for ipad  */
